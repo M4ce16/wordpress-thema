@@ -35,5 +35,7 @@
     </div>
 </nav>
     <div class="jumbotron" style="background-image: url(<?php echo get_template_directory_uri() . 'img/01.jpg' ?>)">
+      <div class="container">
     <h1 class="display-4"><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1>
     <p class="lead"><a href="<?php bloginfo('description') ?>"></p>
+    </div>
