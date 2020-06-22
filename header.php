@@ -8,11 +8,11 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <?php wp_nav_manu(
         array('theme_location' => 'hoofd-menu')
       ); ?>
-    </nav>
+    </nav> -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
