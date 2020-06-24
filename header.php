@@ -8,11 +8,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <!-- <nav>
-      <?php wp_nav_manu(
-        array('theme_location' => 'hoofd-menu')
-      ); ?>
-    </nav> -->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-primary" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,11 +26,12 @@
             'menu_class'        => 'nav navbar-nav',
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
+        )
+      );
         ?>
     </div>
 </nav>
-    <div class="jumbotron" style="background-image: url(<?php echo get_template_directory_uri() . 'img/01.jpg' ?>)">
+    <div class="jumbotron" style="background-image: url(<?php echo get_template_directory_uri() . '/img/01.jpg' ?>)">
       <div class="container">
     <h1 class="display-4"><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1>
     <p class="lead"><a href="<?php bloginfo('description') ?>"></p>

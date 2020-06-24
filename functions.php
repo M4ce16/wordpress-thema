@@ -9,11 +9,11 @@ function laadStijlbladenScripts() {
 add_action('init', 'laadStijlbladenScripts');
 
 
-function register_menu() {
+function registreer_menu() {
   $argumenten = array(
     'hoofd-menu' => __('Hoofd menu')
   );
-  register_nav_menus();
+  register_nav_menus($argumenten);
 }
 add_action('init', 'registreer_menu');
 
@@ -24,3 +24,31 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'init', 'register_navwalker' );
+
+
+//widgets
+function registreer_widgets() {
+    register_sidebar(
+      array(
+        'id' => 'aside',
+        'name' => __('Widget aside'),
+        'description' => __('Widget voor het aside-element'),
+        'before_widget' => '<div class="widget-aside">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-titel">',
+        'after_title' => '</h3>'
+      )
+    );
+register_sidebar(
+  array(
+    'id' => 'onder',
+    'name' => __('Widget footer'),
+    'description' => __('Widget voor de footer'),
+    'before_widget' => '<div class="widget-footer">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-footer-titel">',
+    'after_title' => '</h3>'
+  )
+);
+}
+add_action( 'init', 'registreer_widgets' );

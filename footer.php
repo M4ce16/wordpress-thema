@@ -1,11 +1,15 @@
 <footer class="bg-primary text-white p-4">
 <div class="container">
-  <div class="row"><div class="col-md-6"><small>
+  <div class="row"><div class="col-md-4">
+    <div class="col-md-4">
+      <?php dynamic_sidebar('onder'); ?>
+    </div>
+    <small>
     &copy; <?php the_author(); ?>
     <?php date('Y'); ?>
   </small></div>
 </div>
-  <div class="validatie col-md-6">
+  <div class="validatie col-md-4">
     <small>
       <a href="http://validator.w3.org/check?uri=referer" target="_blank">
         <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
@@ -13,7 +17,10 @@
         <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
       </a>
       </small>
-</div></div>
+</div>
+
+</div>
+
 </footer>
 <?php wp_footer(); ?>
 </body>
