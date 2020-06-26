@@ -17,6 +17,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   font-family: sans-serif;
   background: gray;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .validatie img {
@@ -41,4 +44,41 @@ body {
 .jumbotron a:hover {
   color: white;
   text-decoration: underline;
+}
+
+.widget-footer {
+  font-size: .8em;
+}
+
+.widget-footer a {
+  color: white;
+}
+
+.widget-footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.widget-footer-titel {
+  font-size: 1.2rem;
+}
+
+.widget-aside {
+  padding: 2em 1em 2em 1em;
+  border-bottom: 1px solid grey;
+  color: black;
+}
+
+.widget-titel h3 {
+  font-size: .7;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.nav-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
 }
