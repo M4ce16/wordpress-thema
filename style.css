@@ -46,6 +46,11 @@ body {
   text-decoration: underline;
 }
 
+/*font*/
+.jumbotron, h1, h2, h3, h4, .navbar-brand {
+  font-family: 'Faster One';
+}
+
 .widget-footer {
   font-size: .8em;
 }
